@@ -41,7 +41,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .text h1 {
@@ -136,7 +135,6 @@ button:hover {
     background-color: hsl(0deg, 0%, 100%);
     justify-content: space-between;
     height: 90%;
-    background-color: aquamarine;
     margin: 1.5em;
   }
   .text h1 {
