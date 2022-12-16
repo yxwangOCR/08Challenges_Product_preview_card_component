@@ -11,9 +11,13 @@
 </head>
 
 <body>
-    <div class="component">
-        <img class="hero-image-mobile" src="images/image-product-mobile.jpg" alt="perfume-mobile" />
-        <img class="hero-image-desktop" src="images/image-product-desktop.jpg" alt="perfume-desktop" />
+    <main class="component">
+        <picture>
+            <source media="(min-width: 350px)" srcset="images/image-product-mobile.jpg">
+            <source media="(min-width: 992px)" srcset="images/image-product-desktop.jpg">
+            <img src="images/image-product-mobile.jpg" />
+        </picture>
+
         <div class="text">
             <span class="perfume">PERFUME</span>
             <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -22,8 +26,7 @@
             <div class="price"><span>$149.99</span><span>$169.99</span></div>
             <button><img src="images/icon-cart.svg" alt="cart" />Add to Cart</button>
         </div>
-
-    </div>
+    </main>
     <div class="footer">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by Yixuan Wang.
@@ -31,3 +34,11 @@
 </body>
 
 </html>
+
+
+<!--
+    <img class="hero-image-mobile" src="images/image-product-mobile.jpg"
+    alt="Chanel Gabrielle Perfume flacon for mobile layout" />
+<img class="hero-image-desktop" src="images/image-product-desktop.jpg"
+    alt="Chanel Gabrielle Perfume flacon for desktop layout" />
+-->

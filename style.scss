@@ -29,31 +29,32 @@ body {
   display: flex;
   flex-direction: column;
   width: 345px;
-  height: 610px;
+  /*height: 610px;*/
+  height: 100%;
   background-color: $White;
   border-radius: 8px;
 }
-.hero-image-mobile {
+
+.component picture img {
   border-radius: 8px 8px 0 0;
-}
-.hero-image-desktop {
-  display: none;
+  width: 345px;
+  height: 240px;
 }
 
 .perfume {
   color: $Gray;
   letter-spacing: 0.5em;
   font-family: $TextFont;
-  margin: 1em 0;
+  margin: 0 0 1em 0;
   font-size: 0.8em;
 }
 
 .text {
-  height: 100%;
   margin: 1em 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: yellow;
 }
 
 .text h1 {
@@ -66,6 +67,7 @@ body {
 .text p {
   color: $Gray;
   font-family: $TextFont;
+  font-size: 0.8em;
   line-height: 1.8em;
 }
 
@@ -104,6 +106,7 @@ button {
   align-items: center;
   gap: 1em;
   margin-top: 1em;
+  cursor: pointer;
 }
 button:hover {
   background-color: $Blue;
@@ -132,18 +135,19 @@ button:hover {
     width: 518px;
     height: 389px;
   }
-  .hero-image-mobile {
-    display: none;
-  }
-  .hero-image-desktop {
-    display: block;
+
+  .component picture img {
     border-radius: 8px 0 0 8px;
-    max-width: 50%;
+    width: 229px;
+    height: 100%;
+    object-fit: cover;
   }
   .text {
     background-color: $White;
     justify-content: space-between;
     height: 90%;
+    background-color: aquamarine;
+    margin: 1.5em;
   }
   .text h1 {
     font-size: 2.2em;
@@ -152,7 +156,6 @@ button:hover {
     font-size: 0.8em;
     margin: 0;
   }
-
   button {
     padding: 1em 2em;
     gap: 0.6em;
