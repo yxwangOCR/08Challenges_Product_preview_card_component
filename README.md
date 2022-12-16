@@ -23,7 +23,7 @@ Users should be able to:
 
 ## Useful tips + examples
 
-[Picture Element](https://www.w3schools.com/html/html_images_picture.asp)
+## [Picture Element](https://www.w3schools.com/html/html_images_picture.asp)
 
 ```html
 <picture>
@@ -53,16 +53,16 @@ picture img {
 </picture>
 ```
 
-[Text alternatives for images](https://www.w3.org/WAI/tutorials/images/)
+## [Text alternatives for images](https://www.w3.org/WAI/tutorials/images/)
 
-- <strong>Tip 3 </strong>: Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities.
+Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities.
 
+## [Del Tag](https://www.w3schools.com/tags/tag_del.asp)
+
+[What is del tag in HTML?](https://www.educative.io/answers/what-is-del-tag-in-html)
+
+The del tag in HTML is used to strike a line through a text segment to indicate it has been deleted. It is used to indicate information that has been updated or is no longer accurate.
+
+```html
+<del> Strike off text </del>
 ```
-Why is this important?
-```
-
-- People using screen readers: The text alternative can be read aloud or rendered as Braille
-- People using speech input software: Users can put the focus onto a button or linked image with a single voice command
-- People browsing speech-enabled websites: The text alternative can be read aloud
-- Mobile web users: Images can be turned off, especially for data-roaming
-- Search engine optimization: Images become indexable by search engines
