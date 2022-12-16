@@ -140,11 +140,12 @@ button:hover {
     margin: 1.5em;
   }
   .text h1 {
-    font-size: 2.2em;
+    font-size: 2.7em;
   }
   .text p {
     font-size: 0.8em;
     margin: 0;
+    width: 16em;
   }
   button {
     padding: 1em 2em;
