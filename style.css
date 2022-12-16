@@ -8,6 +8,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .component {
@@ -19,8 +21,12 @@ body {
   border-radius: 8px;
 }
 
-.component img {
+.hero-image-mobile {
   border-radius: 8px 8px 0 0;
+}
+
+.hero-image-desktop {
+  display: none;
 }
 
 .perfume {
@@ -97,7 +103,52 @@ button:hover {
 }
 
 .footer {
-  margin-top: 3rem;
+  margin: 5rem 1em 0 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(212deg, 21%, 14%);
+  text-align: center;
+}
+
+.footer a {
+  color: hsl(158deg, 36%, 37%);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 992px) {
+  .component {
+    flex-direction: row;
+    width: 518px;
+    height: 389px;
+  }
+  .hero-image-mobile {
+    display: none;
+  }
+  .hero-image-desktop {
+    display: block;
+    border-radius: 8px 0 0 8px;
+    max-width: 50%;
+  }
+  .text {
+    background-color: hsl(0deg, 0%, 100%);
+    justify-content: space-between;
+    height: 90%;
+  }
+  .text h1 {
+    font-size: 2.2em;
+  }
+  .text p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  button {
+    padding: 1em 2em;
+    gap: 0.6em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
