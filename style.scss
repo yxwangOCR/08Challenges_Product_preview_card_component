@@ -1,0 +1,109 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+$TextFont: "Montserrat", sans-serif;
+$TitleFont: "Fraunces", serif;
+$FontSize: 14px;
+
+// Colors:
+$Cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+$Blue: hsl(212, 21%, 14%);
+$Gray: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  font-size: $FontSize;
+  background-color: $Cream;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  height: 610px;
+  background-color: $White;
+  border-radius: 8px;
+}
+.component img {
+  border-radius: 8px 8px 0 0;
+}
+
+.perfume {
+  color: $Gray;
+  letter-spacing: 0.5em;
+  font-family: $TextFont;
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+.text {
+  height: 100%;
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text h1 {
+  margin: 0;
+  color: $Blue;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+.text p {
+  color: $Gray;
+  font-family: $TextFont;
+  line-height: 1.8em;
+}
+
+.price {
+  display: inline-flex;
+  align-items: center;
+}
+
+.price :nth-child(1) {
+  color: $Cyan;
+  font-family: $TitleFont;
+  font-weight: 700;
+  font-size: 2em;
+}
+.price :nth-child(2) {
+  color: $Gray;
+  font-family: $TextFont;
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: line-through;
+}
+.price span {
+  margin-right: 1em;
+}
+
+button {
+  background-color: $Cyan;
+  border: none;
+  color: $White;
+  font-family: $TextFont;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 1.2em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+button:hover {
+  background-color: $Blue;
+}
+
+.footer {
+  margin-top: 3rem;
+}
