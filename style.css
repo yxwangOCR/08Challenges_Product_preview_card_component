@@ -102,7 +102,7 @@ button:hover {
   background-color: hsl(212deg, 21%, 14%);
 }
 
-.footer {
+Footer div {
   margin: 5rem 1em 0 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -110,12 +110,12 @@ button:hover {
   text-align: center;
 }
 
-.footer a {
+Footer div a {
   color: hsl(158deg, 36%, 37%);
   text-decoration: none;
 }
 
-.footer a:hover {
+Footer div a:hover {
   text-decoration: underline;
 }
 
@@ -129,7 +129,8 @@ button:hover {
     border-radius: 8px 0 0 8px;
     width: 229px;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .text {
     background-color: hsl(0deg, 0%, 100%);
@@ -149,6 +150,4 @@ button:hover {
     padding: 1em 2em;
     gap: 0.6em;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
